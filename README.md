@@ -89,6 +89,7 @@ Open `build/index.html` in a browser to preview your static site locally.
    This creates the `gh-pages` branch (if it doesn't exist), pushes the contents of `build/`, and sets it up for GitHub Pages.
 
 4. In your GitHub repo:
+
    - Go to **Settings > Pages**
    - Set **Source** to `gh-pages` branch and `/ (root)`
 
