@@ -92,4 +92,4 @@ Open `build/index.html` in a browser to preview your static site locally.
    - Go to **Settings > Pages**
    - Set **Source** to `gh-pages` branch and `/ (root)`
 
-5. Save your settings. GitHub Pages will pu
+5. Save your settings. GitHub Pages will publish your site automatically.
