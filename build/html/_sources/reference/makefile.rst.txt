@@ -1,5 +1,5 @@
-Windows Make file reference
-==========================
+Make file reference (Windows)
+=============================
 
 This file contains the contents of a standard `make.bat` file used by Sphinx on Windows.
 You can copy this into the root of your project to enable command-line builds like:

@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="API reference" href="api.html" /><link rel="prev" title="Sphinx + reStructuredText demo" href="index.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
-        <title>Get started with Sphinx and reStructuredText (reST) - Sphinx + reStructuredText demo 1.0 documentation</title>
+        <title>Get started with Sphinx and reStructuredText (reST) - Sphinx + reStructuredText demo</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
@@ -166,7 +166,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">Sphinx + reStructuredText demo 1.0 documentation</div></a>
+      <a href="index.html"><div class="brand">Sphinx + reStructuredText demo</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -189,7 +189,7 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
-  <span class="sidebar-brand-text">Sphinx + reStructuredText demo 1.0 documentation</span>
+  <span class="sidebar-brand-text">Sphinx + reStructuredText demo</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -199,9 +199,9 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Get started with Sphinx and reStructuredText (reST)</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Get started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reference/makefile.html">Windows Make file reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/makefile.html">Make file reference (Windows)</a></li>
 </ul>
 
 </div>
@@ -288,8 +288,8 @@
 </li>
 <li><p>Or with <code class="docutils literal notranslate"><span class="pre">make</span></code> (on Windows use <code class="docutils literal notranslate"><span class="pre">make.bat</span></code>):</p>
 <p>The <cite>make.bat</cite> file is a batch script that simplifies the Sphinx build process on Windows.</p>
-<p>Copy the <a class="reference internal" href="reference/makefile.html"><span class="doc">Windows Make file reference</span></a> into your root, then run it locally:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make.bat<span class="w"> </span>html
+<p>Copy the <a class="reference internal" href="reference/makefile.html"><span class="doc">Make file reference (Windows)</span></a> into your root, then run it locally:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./make.bat<span class="w"> </span>html
 </pre></div>
 </div>
 </li>
@@ -309,7 +309,7 @@
 </div>
 </li>
 <li><p>Deploy the <cite>build/</cite> folder to a new <cite>gh-pages</cite> branch using:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>build
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>build/html
 </pre></div>
 </div>
 <p>This creates the <cite>gh-pages</cite> branch (if it doesn’t exist), pushes the contents of <cite>build/</cite>, and sets it up for GitHub Pages.</p>
