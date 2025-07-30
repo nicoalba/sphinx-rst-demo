@@ -22,7 +22,7 @@ POST /users
 
 Creates a new user.
 
-**Request Body:**
+**Request body:**
 
 .. code-block:: json
 
