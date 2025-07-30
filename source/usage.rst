@@ -85,7 +85,7 @@ Deploy with GitHub Pages
 
    .. code-block:: bash
 
-      ghp-import -n -p -f build
+      ghp-import -n -p -f build/html
 
    This creates the `gh-pages` branch (if it doesn't exist), pushes the contents of `build/`, and sets it up for GitHub Pages.
 
