@@ -1,5 +1,7 @@
 # Configuration file for the Sphinx documentation builder.
 
+html_title = "Sphinx + reStructuredText demo"
+html_short_title = "Sphinx + reST"
 project = 'Sphinx + reStructuredText demo'
 author = 'Nico Alba'
 release = '1.0'

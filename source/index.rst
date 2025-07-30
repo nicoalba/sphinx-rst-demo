@@ -7,6 +7,6 @@ This is a simple doc project built with Sphinx and reStructuredText (reST). It s
    :maxdepth: 2
    :caption: Contents:
 
-   usage
+   Get started<usage>
    api
    reference/makefile
