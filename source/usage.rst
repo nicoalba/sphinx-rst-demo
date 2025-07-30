@@ -63,7 +63,7 @@ You can generate your site using either of the following:
 
    .. code-block:: bash
 
-      make.bat html
+      ./make.bat html
 
 Preview the output
 ------------------

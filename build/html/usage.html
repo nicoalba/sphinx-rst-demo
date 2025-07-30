@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="API reference" href="api.html" /><link rel="prev" title="Welcome to the Sphinx + reStructuredText Demo!" href="index.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="API reference" href="api.html" /><link rel="prev" title="Sphinx + reStructuredText demo" href="index.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
-        <title>Usage guide - Sphinx + reStructuredText demo 1.0 documentation</title>
+        <title>Get started with Sphinx and reStructuredText (reST) - Sphinx + reStructuredText demo 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
@@ -199,8 +199,9 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Usage guide</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Get started with Sphinx and reStructuredText (reST)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/makefile.html">Windows Make file reference</a></li>
 </ul>
 
 </div>
@@ -241,19 +242,83 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="usage-guide">
-<h1>Usage guide<a class="headerlink" href="#usage-guide" title="Link to this heading">¶</a></h1>
-<p>This page explains how to use the Python script in this project.</p>
-<section id="running-the-script">
-<h2>Running the script<a class="headerlink" href="#running-the-script" title="Link to this heading">¶</a></h2>
-<p>To run the script, use:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>my_script.py<span class="w"> </span>--input<span class="w"> </span>data.yaml<span class="w"> </span>--output<span class="w"> </span>endpoints.md
+          <section id="get-started-with-sphinx-and-restructuredtext-rest">
+<h1>Get started with Sphinx and reStructuredText (reST)<a class="headerlink" href="#get-started-with-sphinx-and-restructuredtext-rest" title="Link to this heading">¶</a></h1>
+<p>This page explains how to install Sphinx, generate a static site using reStructuredText (reST), and deploy it with GitHub Pages.</p>
+<section id="install-sphinx">
+<h2>Install Sphinx<a class="headerlink" href="#install-sphinx" title="Link to this heading">¶</a></h2>
+<p>Install Sphinx via pip:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sphinx
+</pre></div>
+</div>
+<p>(Optional) If you want a dark theme, install Furo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>furo
 </pre></div>
 </div>
 </section>
-<section id="output-format">
-<h2>Output format<a class="headerlink" href="#output-format" title="Link to this heading">¶</a></h2>
-<p>The script reads a YAML file and outputs a Markdown file documenting API endpoints.</p>
+<section id="run-the-sphinx-quickstart">
+<h2>Run the Sphinx quickstart<a class="headerlink" href="#run-the-sphinx-quickstart" title="Link to this heading">¶</a></h2>
+<p>Initialize your project with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-quickstart
+</pre></div>
+</div>
+<p>This generates folders like <cite>source/</cite> and <cite>build/</cite>, as well as default files such as <cite>conf.py</cite> and <cite>index.rst</cite>.</p>
+</section>
+<section id="customize-the-rest-files">
+<h2>Customize the reST files<a class="headerlink" href="#customize-the-rest-files" title="Link to this heading">¶</a></h2>
+<p>Inside the <cite>source/</cite> folder, add your documentation files:</p>
+<ul class="simple">
+<li><p><cite>index.rst</cite> – homepage and table of contents</p></li>
+<li><p><cite>usage.rst</cite> – usage instructions (this page)</p></li>
+<li><p><cite>api.rst</cite> – API reference content</p></li>
+</ul>
+<p>Update <cite>conf.py</cite> to include your theme:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;furo&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="build-the-html-output">
+<h2>Build the HTML output<a class="headerlink" href="#build-the-html-output" title="Link to this heading">¶</a></h2>
+<p>You can generate your site using either of the following:</p>
+<ol class="arabic">
+<li><p>Direct command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-build<span class="w"> </span>-b<span class="w"> </span>html<span class="w"> </span><span class="nb">source</span><span class="w"> </span>build
+</pre></div>
+</div>
+</li>
+<li><p>Or with <code class="docutils literal notranslate"><span class="pre">make</span></code> (on Windows use <code class="docutils literal notranslate"><span class="pre">make.bat</span></code>):</p>
+<p>The <cite>make.bat</cite> file is a batch script that simplifies the Sphinx build process on Windows.</p>
+<p>Copy the <a class="reference internal" href="reference/makefile.html"><span class="doc">Windows Make file reference</span></a> into your root, then run it locally:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make.bat<span class="w"> </span>html
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="preview-the-output">
+<h2>Preview the output<a class="headerlink" href="#preview-the-output" title="Link to this heading">¶</a></h2>
+<p>Open <cite>build/index.html</cite> in a browser to preview your static site locally.</p>
+</section>
+<section id="deploy-with-github-pages">
+<h2>Deploy with GitHub Pages<a class="headerlink" href="#deploy-with-github-pages" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p>Commit and push the project to GitHub.</p></li>
+<li><p>Install the GitHub Pages import tool:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>ghp-import
+</pre></div>
+</div>
+</li>
+<li><p>Deploy the <cite>build/</cite> folder to a new <cite>gh-pages</cite> branch using:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>build
+</pre></div>
+</div>
+<p>This creates the <cite>gh-pages</cite> branch (if it doesn’t exist), pushes the contents of <cite>build/</cite>, and sets it up for GitHub Pages.</p>
+</li>
+<li><p>In your GitHub repo:
+- Go to <strong>Settings &gt; Pages</strong>
+- Set <strong>Source</strong> to <cite>gh-pages</cite> branch and <cite>/ (root)</cite></p></li>
+<li><p>Save your settings. GitHub Pages will publish your site automatically.</p></li>
+</ol>
 </section>
 </section>
 
@@ -312,9 +377,13 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Usage guide</a><ul>
-<li><a class="reference internal" href="#running-the-script">Running the script</a></li>
-<li><a class="reference internal" href="#output-format">Output format</a></li>
+<li><a class="reference internal" href="#">Get started with Sphinx and reStructuredText (reST)</a><ul>
+<li><a class="reference internal" href="#install-sphinx">Install Sphinx</a></li>
+<li><a class="reference internal" href="#run-the-sphinx-quickstart">Run the Sphinx quickstart</a></li>
+<li><a class="reference internal" href="#customize-the-rest-files">Customize the reST files</a></li>
+<li><a class="reference internal" href="#build-the-html-output">Build the HTML output</a></li>
+<li><a class="reference internal" href="#preview-the-output">Preview the output</a></li>
+<li><a class="reference internal" href="#deploy-with-github-pages">Deploy with GitHub Pages</a></li>
 </ul>
 </li>
 </ul>
