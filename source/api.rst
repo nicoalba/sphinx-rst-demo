@@ -27,7 +27,7 @@ Creates a new user.
 .. code-block:: json
 
    {
-     "name": "Charlie"
+     "name": "Rodrigo"
    }
 
 **Response:**
@@ -36,5 +36,5 @@ Creates a new user.
 
    {
      "id": 3,
-     "name": "Charlie"
+     "name": "Alexis"
    }
