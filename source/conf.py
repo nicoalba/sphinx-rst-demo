@@ -1,8 +1,9 @@
 # Configuration file for the Sphinx documentation builder.
 
+project = "Sphinx + reStructuredText demo"
+release = ""
 html_title = "Sphinx + reStructuredText demo"
 html_short_title = "Sphinx + reST"
-project = 'Sphinx + reStructuredText demo'
 author = 'Nico Alba'
 release = '1.0'
 
