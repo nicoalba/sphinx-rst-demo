@@ -1,0 +1,69 @@
+Windows Make file reference
+==========================
+
+This file contains the contents of a standard `make.bat` file used by Sphinx on Windows.
+You can copy this into the root of your project to enable command-line builds like:
+
+.. code-block:: bash
+
+   make.bat html
+
+Contents of `make.bat`
+-----------------------
+
+.. code-block:: bat
+
+   @ECHO OFF
+
+   REM Command file for Sphinx documentation
+   REM
+
+   set SPHINXBUILD=sphinx-build
+   set SOURCEDIR=source
+   set BUILDDIR=build
+
+   if "%SPHINXBUILD%" == "" (
+       set SPHINXBUILD=sphinx-build
+   )
+   if "%1" == "" goto help
+
+   %SPHINXBUILD% >NUL 2>NUL
+   if errorlevel 9009 (
+       echo.
+       echo.The 'sphinx-build' command was not found. Make sure you have Sphinx
+       echo.installed, then set the SPHINXBUILD environment variable to point
+       echo.to the full path of the sphinx-build executable. Alternatively, you
+       echo.may add the Sphinx directory to PATH.
+       echo.
+       echo.If you don't have Sphinx installed, grab it from
+       echo.https://www.sphinx-doc.org/
+       exit /b 1
+   )
+
+   %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
+   goto end
+
+   :help
+   echo.Usage: make.bat [TARGET]
+   echo.
+   echo.Targets:
+   echo.  html       to make HTML files
+   echo.  dirhtml    to make HTML files (directory style)
+   echo.  singlehtml to make a single large HTML file
+   echo.  pickle     to make pickle files
+   echo.  json       to make JSON files
+   echo.  latex      to make LaTeX files, you can set PAPER=a4 or PAPER=letter
+   echo.  latexpdf   to make LaTeX and PDF files
+   echo.  text       to make text files
+   echo.  man        to make manual pages
+   echo.  texinfo    to make Texinfo files
+   echo.  epub       to make EPUB files
+   echo.  coverage   to run coverage check of the documentation
+   echo.  doctest    to run doctests
+   echo.  linkcheck  to check all external links for integrity
+   echo.  xml        to make Docutils-native XML files
+   echo.  pseudoxml  to make pseudoxml-XML files for debugging output
+   echo.  json       to make JSON files
+   echo.
+
+   :end
