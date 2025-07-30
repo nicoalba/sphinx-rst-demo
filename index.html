@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="API reference" href="api.html" /><link rel="prev" title="Welcome to the Sphinx + reStructuredText Demo!" href="index.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Get started with Sphinx and reStructuredText (reST)" href="usage.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
-        <title>Usage guide - Sphinx + reStructuredText demo 1.0 documentation</title>
+        <title>Sphinx + reStructuredText demo 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
@@ -166,7 +166,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">Sphinx + reStructuredText demo 1.0 documentation</div></a>
+      <a href="#"><div class="brand">Sphinx + reStructuredText demo 1.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -178,7 +178,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -187,7 +187,7 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
   
   <span class="sidebar-brand-text">Sphinx + reStructuredText demo 1.0 documentation</span>
   
@@ -198,9 +198,10 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Usage guide</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Get started with Sphinx and reStructuredText (reST)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/makefile.html">Windows Make file reference</a></li>
 </ul>
 
 </div>
@@ -221,7 +222,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="_sources/usage.rst.txt" title="View this page">
+  <a class="muted-link" href="_sources/index.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -235,26 +236,38 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="usage-guide">
-<h1>Usage guide<a class="headerlink" href="#usage-guide" title="Link to this heading">¶</a></h1>
-<p>This page explains how to use the Python script in this project.</p>
-<section id="running-the-script">
-<h2>Running the script<a class="headerlink" href="#running-the-script" title="Link to this heading">¶</a></h2>
-<p>To run the script, use:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>my_script.py<span class="w"> </span>--input<span class="w"> </span>data.yaml<span class="w"> </span>--output<span class="w"> </span>endpoints.md
-</pre></div>
+          <section id="sphinx-restructuredtext-demo">
+<h1>Sphinx + reStructuredText demo<a class="headerlink" href="#sphinx-restructuredtext-demo" title="Link to this heading">¶</a></h1>
+<p>This is a simple doc project built with Sphinx and reStructuredText (reST). It showcases page linking, code blocks, and structured navigation.</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Get started with Sphinx and reStructuredText (reST)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#install-sphinx">Install Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#run-the-sphinx-quickstart">Run the Sphinx quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#customize-the-rest-files">Customize the reST files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#build-the-html-output">Build the HTML output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#preview-the-output">Preview the output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#deploy-with-github-pages">Deploy with GitHub Pages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#get-users">GET /users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#post-users">POST /users</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/makefile.html">Windows Make file reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/makefile.html#contents-of-make-bat">Contents of <cite>make.bat</cite></a></li>
+</ul>
+</li>
+</ul>
 </div>
-</section>
-<section id="output-format">
-<h2>Output format<a class="headerlink" href="#output-format" title="Link to this heading">¶</a></h2>
-<p>The script reads a YAML file and outputs a Markdown file documenting API endpoints.</p>
-</section>
 </section>
 
         </article>
@@ -262,26 +275,16 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="api.html">
+          <a class="next-page" href="usage.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">API reference</div>
+                <div class="title">Get started with Sphinx and reStructuredText (reST)</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="index.html">
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-              <div class="page-info">
-                <div class="context">
-                  <span>Previous</span>
-                </div>
-                
-                <div class="title">Home</div>
-                
-              </div>
-            </a>
+          
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -300,28 +303,8 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">Usage guide</a><ul>
-<li><a class="reference internal" href="#running-the-script">Running the script</a></li>
-<li><a class="reference internal" href="#output-format">Output format</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>

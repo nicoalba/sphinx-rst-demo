@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Usage guide" href="usage.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Windows Make file reference" href="reference/makefile.html" /><link rel="prev" title="Get started with Sphinx and reStructuredText (reST)" href="usage.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
-        <title>Sphinx + reStructuredText demo 1.0 documentation</title>
+        <title>API reference - Sphinx + reStructuredText demo 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=25af2a20" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
@@ -166,7 +166,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">Sphinx + reStructuredText demo 1.0 documentation</div></a>
+      <a href="index.html"><div class="brand">Sphinx + reStructuredText demo 1.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -178,7 +178,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -187,7 +187,7 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   <span class="sidebar-brand-text">Sphinx + reStructuredText demo 1.0 documentation</span>
   
@@ -198,9 +198,10 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API reference</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Get started with Sphinx and reStructuredText (reST)</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/makefile.html">Windows Make file reference</a></li>
 </ul>
 
 </div>
@@ -221,7 +222,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="_sources/index.rst.txt" title="View this page">
+  <a class="muted-link" href="_sources/api.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -235,30 +236,43 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="welcome-to-the-sphinx-restructuredtext-demo">
-<h1>Welcome to the Sphinx + reStructuredText Demo!<a class="headerlink" href="#welcome-to-the-sphinx-restructuredtext-demo" title="Link to this heading">¶</a></h1>
-<p>This is a simple documentation project built with Sphinx and reStructuredText (reST). It showcases page linking, code blocks, and structured navigation.</p>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#running-the-script">Running the script</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#output-format">Output format</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="api.html#get-users">GET /users</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#post-users">POST /users</a></li>
-</ul>
-</li>
-</ul>
+          <section id="api-reference">
+<h1>API reference<a class="headerlink" href="#api-reference" title="Link to this heading">¶</a></h1>
+<p>This is a sample API reference page written in reStructuredText.</p>
+<section id="get-users">
+<h2>GET /users<a class="headerlink" href="#get-users" title="Link to this heading">¶</a></h2>
+<p>Returns a list of all users.</p>
+<p><strong>Response:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nico&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Enzo&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
 </div>
+</section>
+<section id="post-users">
+<h2>POST /users<a class="headerlink" href="#post-users" title="Link to this heading">¶</a></h2>
+<p>Creates a new user.</p>
+<p><strong>Request Body:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Rodrigo&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Response:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Alexis&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
 </section>
 
         </article>
@@ -266,16 +280,26 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="usage.html">
+          <a class="next-page" href="reference/makefile.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Usage guide</div>
+                <div class="title">Windows Make file reference</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          
+          <a class="prev-page" href="usage.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Get started with Sphinx and reStructuredText (reST)</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -294,8 +318,28 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">API reference</a><ul>
+<li><a class="reference internal" href="#get-users">GET /users</a></li>
+<li><a class="reference internal" href="#post-users">POST /users</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
